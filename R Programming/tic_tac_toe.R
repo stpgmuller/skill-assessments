@@ -1,7 +1,6 @@
-#Author: Stephanie Muller
 ## MiniProject: Tic-Tac-Toe
 
-# Function to display the tic-tac-toe board
+# Display the tic-tac-toe board
 display_board <- function(board) {
   cat("\n")
   for (i in 1:3) {
@@ -11,7 +10,7 @@ display_board <- function(board) {
   cat("\n")
 }
 
-# Function to check if any player has won
+# Check if a player has won
 check_win <- function(board, player) {
   # Check rows
   for (i in 1:3) {
@@ -32,7 +31,7 @@ check_win <- function(board, player) {
   return(FALSE)
 }
 
-# Function to check if the board is full
+# Check if the board is full
 check_full <- function(board) {
   return(all(board != ""))
 }
